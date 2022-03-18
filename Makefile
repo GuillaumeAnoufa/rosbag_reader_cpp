@@ -16,7 +16,8 @@ OBJ_PATH = build
 OPENCV_LIBS = -lopencv_highgui -lopencv_imgproc -lopencv_core -lopencv_videoio \
 -lopencv_calib3d -lopencv_imgcodecs
 
-ROS_LIBS = -lrosbag -lrosbag_storage -lroscpp -lcpp_common -lroslib -lrostime -lroscpp_serialization
+ROS_LIBS = -lrosbag -lrosbag_storage -lroscpp -lcpp_common \
+-lroslib -lrostime -lroscpp_serialization -lrosconsole -lcv_bridge
 
 LIBS = $(OPENCV_LIBS) $(ROS_LIBS) -ltbb -lpthread -lglog -lhpad_detector
 
